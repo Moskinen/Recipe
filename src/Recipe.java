@@ -41,7 +41,7 @@ public class Recipe {
     }
 
 //ToString
-    public String toStrin(){
+    public String toString(){
         return
                         ("Category: " + type + "\n")+
                         ("Title: " + title + "\n")+
