@@ -51,59 +51,7 @@ public class Recipe {
 
     }
 
-    // metode for at søge efter opskrift
-public void findRecipe(String title, typeOfRecipe type, int numberOfPeople, String ingredients){
-}
 
-// definer enum værdier
-public enum typeOfRecipe {
-    APPETIZER,
-    MAIN,
-    DESSERT
-    }
-
-    // metode som viser mulighederne fordelt i kategorier
-    public static void displayRecipesByCategory(ArrayList<Recipe> recipes) {
-        // Display all appetizers recipes
-        System.out.println("Recipes for sweet appetizers:");
-        for (Recipe recipe : recipes) {
-            // Check if the recipe type is appetizer
-            if (recipe.getTypeOfRecipe() == typeOfRecipe.APPETIZER) {
-                // Print the recipe details
-                System.out.println(recipe.toString());
-            }
-        }
-
-        // Display all main course recipes
-        System.out.println("Recipes for fulfilling main course:");
-        for (Recipe recipe : recipes) {
-            // Check if the recipe type is main
-            if (recipe.getTypeOfRecipe() == typeOfRecipe.MAIN) {
-                // Print the recipe details
-                System.out.println(recipe.toString());
-            }
-        }
-
-        // Display all dessert recipes
-        System.out.println("Recipes for delicious desserts:");
-        for (Recipe recipe : recipes) {
-            // Check if the recipe type is dessert
-            if (recipe.getTypeOfRecipe() == typeOfRecipe.DESSERT) {
-                // Print the recipe details
-                System.out.println(recipe.toString());
-            }
-        }
-        // en metode der printer en indkøbsliste
-        public static void printGroceryList(ArrayList < Recipe > recipes) {
-            System.out.println("Grocery List:");
-            for (Recipe recipe : recipes) {
-                // Print the ingredients of each recipe
-                System.out.println(recipe.getIngredients());
-            }
-        }
-
-
-        }
     }
 
 
