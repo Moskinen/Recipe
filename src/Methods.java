@@ -16,6 +16,7 @@ public class Methods {
 
         System.out.println("How many people is the recipe for?");
         int numberOfPeople = scanner.nextInt();
+        scanner.nextLine();
 
         System.out.println("What ingredients are used? Remember the quantity");
         String ingredients = scanner.nextLine();
@@ -25,6 +26,8 @@ public class Methods {
 
         Recipe newRecipe = new Recipe(title, numberOfPeople, ingredients, instructions);
         recipeBook.add(newRecipe);
+
+        System.out.println("Your recipe \" " + title + "\" has been added to the website");
     }
 
     //Method to display menu
