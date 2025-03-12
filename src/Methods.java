@@ -11,6 +11,9 @@ public class Methods {
         Scanner scanner = new Scanner(System.in);
         System.out.println("You have chosen to add a new recipe");
 
+        System.out.println("Is your recipe:\n APPETIZER \n MAIN \n DESSERT \n SNACK");
+        typeOfRecipe type = typeOfRecipe.valueOf(scanner.nextLine());
+
         System.out.println("What is the title of your recipe?");
         String title = scanner.nextLine();
 
@@ -24,7 +27,7 @@ public class Methods {
         System.out.println("List the instructions for the recipe");
         String instructions = scanner.nextLine();
 
-        Recipe newRecipe = new Recipe(title, numberOfPeople, ingredients, instructions);
+        Recipe newRecipe = new Recipe(type, title, numberOfPeople, ingredients, instructions);
         recipeBook.add(newRecipe);
 
         System.out.println("Your recipe \" " + title + "\" has been added to the website");
