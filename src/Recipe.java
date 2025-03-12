@@ -4,11 +4,11 @@ import java.util.ArrayList;
 public class Recipe {
     private String title;
     private int numberOfPeople;
-    private ArrayList<String> ingredients;
-    private ArrayList<String> instructions;
+    private String ingredients;
+    private String instructions;
 
 //Constructor
-    public Recipe(String title, int numberOfPeople, ArrayList<String> ingredients, ArrayList<String> instructions) {
+    public Recipe(String title, int numberOfPeople, String ingredients, String instructions) {
         this.title = title;
         this.numberOfPeople = numberOfPeople;
         this.ingredients = ingredients;
@@ -24,11 +24,11 @@ public class Recipe {
         return numberOfPeople;
     }
 
-    public ArrayList<String> getIngredients() {
+    public String getIngredients() {
         return ingredients;
     }
 
-    public ArrayList<String> getInstructions() {
+    public String getInstructions() {
         return instructions;
     }
 
