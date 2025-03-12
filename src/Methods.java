@@ -45,7 +45,7 @@ public class Methods {
     }
 
     //Method to view all recipes
-    public static void viewAllRecipes() {
+    public static void searchAllRecipes() {
 
     }
 }

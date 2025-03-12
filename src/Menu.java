@@ -22,7 +22,7 @@ public class Menu {
                     Methods.addNewRecipe();
                     break;
                 case 2:
-                    Methods.viewAllRecipes();
+                    Methods.searchAllRecipes();
                     break;
                 case 3:
                     System.out.println("Search");
